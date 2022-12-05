@@ -14,7 +14,7 @@ CREATE TABLE ProductPrice(
 	updatedTime TIME NOT NULL,
 	updatedBy INTEGER(10) NOT NULL,
 	PRIMARY KEY (productId),
-	FOREIGN KEY (id) REFERENCES Product(xid)
+	FOREIGN KEY (id) REFERENCES Product(id)
 );
 
 CREATE TABLE PriceChangeLog(
