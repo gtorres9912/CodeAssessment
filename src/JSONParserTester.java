@@ -1,5 +1,5 @@
 import java.util.Map;
-public class Main {
+public class JSONParserTester {
     public static void main(String[] args) {
         String input = "{\"debug\": \"on\", \"window\" : {\"title\": \"sample\", \"size\": 500}}";
         input = input.strip();
