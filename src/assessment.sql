@@ -4,7 +4,7 @@ CREATE TABLE Product(
 	category VARCHAR(100) NOT NULL,
 	timestamp TIME NOT NULL,
 	addedBy INTEGER(10) NOT NULL,
-	PRIMARY KEY (productId)
+	PRIMARY KEY (id)
 );
 
 CREATE TABLE ProductPrice(
@@ -14,7 +14,7 @@ CREATE TABLE ProductPrice(
 	updatedTime TIME NOT NULL,
 	updatedBy INTEGER(10) NOT NULL,
 	PRIMARY KEY (productId),
-	FOREIGN KEY (id) REFERENCES Product(id)
+	FOREIGN KEY (productId) REFERENCES Product(id)
 );
 
 CREATE TABLE PriceChangeLog(

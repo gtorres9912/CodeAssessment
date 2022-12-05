@@ -11,5 +11,7 @@ public class SerializerTester {
         BinaryTree deserialized = new BinaryTree(bt.deserializer(serialized));
         System.out.print("Deserialized binary tree: ");
         deserialized.bfs();
+
+        // Part 3 - Make the Node and BinaryTree class generic to support any data type
     }
 }
